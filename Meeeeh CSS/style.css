@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "VCR OSD Mono";
+    src: url(VCR_OSD_MONO_1.001.ttf);
+}
+
+@font-face {
+    font-family: Broadway;
+    src: url(ufonts.com_broadway.ttf);
+}
+
+@font-face {
+    font-family: "Still Time";
+    src: url(still time.ttf)
+}
+
+@font-face {
+    font-family: Humanoid;
+    src: url(HUMANOID.TTF)
+}
+
+h1 {
+    /*This sets the main text in the header.
+    Defined are the size, style, font, and color
+    which in this special case, has been made a gradient.*/
+    font-family: "VCR OSD Mono";
+    font-style: italic;
+    font-size: 70px;
+    
+    /*The definition of the gradeient, using webkit.*/
+    background: -webkit-linear-gradient(271deg, #62a4af 0%, #a37bc4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /*Simple formatting of the text to center it
+    and give it some space from the top of the page.*/
+    padding: 40px;
+    text-align: center;
+
+    /*Defines the red border around the header.
+    TODO: Turn it into a gradient to match the vaprowave header.
+    border-style: inset;
+    border-width: 20px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color: red; */
+}
+
+body {
+    /*Same as above, but simpler, and minus
+    the border and the gradient. This will anything in
+    the body of the website.*/
+    color: #721a1a;
+    font-size: 35px;
+    background-color: black;
+    font-family: Broadway;
+    letter-spacing: .33em;
+    text-align: center;
+}
+
+p {
+    font-family: "Still Time";
+     background: -webkit-linear-gradient(272deg, #721a1a 25%, #7f7575 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+li {
+    text-align: left;
+    font-family: Humanoid;
+    background: -webkit-linear-gradient(272deg, #721a1a 10%, #7f7575 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
